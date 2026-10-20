@@ -9,7 +9,7 @@ from pathlib import Path
 import json
 satellites = []
 earth_radius = 6371
-DATA_DIR = Path("C:/Projects/Satellite")
+DATA_DIR = Path(__file__).resolve().parent
 CACHE_FILE = DATA_DIR / "satellite_latest.tle.txt"
 METADATA_FILE = DATA_DIR / "tle_cache_metadata.json"
 CELESTRAK_URL = "https://celestrak.org/NORAD/elements/gp.php"
@@ -153,8 +153,8 @@ def load_snapshot(filename):
     return loaded[0]
 
 def test_snapshots():
-    snapshot1_path = Path("C:/Projects/Satellite/satellite_20261010_032858.tle.txt")
-    snapshot2_path = Path("C:/Projects/Satellite/satellite_20261010_033052.tle.txt")
+    snapshot1_path = DATA_DIR / "satellite_20261010_032858.tle.txt"
+    snapshot2_path = DATA_DIR / "satellite_20261010_033052.tle.txt"
     if not snapshot1_path.exists() or not snapshot2_path.exists():
         print("Snapshot test skipped: required TLE snapshot files are unavailable.")
         return

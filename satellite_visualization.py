@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from PIL import Image
 from sgp4.api import Satrec, jday
 EARTH_RADIUS_KM = 6371.0
-PROJECT_DIR = Path("C:/Projects/Satellite")
+PROJECT_DIR = Path(__file__).resolve().parent
 EARTH_TEXTURE = PROJECT_DIR / "earth_texture.jpg"
 SPACE_BG = "#020817"
 TEXT_COLOR = "#eaf4ff"
