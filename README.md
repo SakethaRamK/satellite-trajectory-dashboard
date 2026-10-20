@@ -8,6 +8,10 @@ The application is built with Python and Streamlit, with Plotly for interactive 
 
 **Repository:** [SakethaRamK/satellite-trajectory-dashboard](https://github.com/SakethaRamK/satellite-trajectory-dashboard)
 
+## Dashboard Preview
+
+![Satellite Trajectory View](assets/3d_view_rotation.png)
+![Altitude Analysis](assets/altitude_plot.png)
 ## Overview
 
 Satellite motion can be studied by propagating orbital elements over time and examining the resulting positions and velocities. When multiple satellites are considered, their relative motion can also be analyzed to estimate their minimum separation during a prediction window.
