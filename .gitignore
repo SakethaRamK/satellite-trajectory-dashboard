@@ -24,3 +24,4 @@ env/
 
 # Runtime-generated TLE cache metadata
 tle_cache_metadata.json
+satellite_latest.tle.txt
